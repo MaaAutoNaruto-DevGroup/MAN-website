@@ -9,6 +9,7 @@ export default defineConfig({
     light: '/rspress-light-logo.png',
     dark: '/rspress-dark-logo.png',
   },
+  base: '/MAN-website/',
   themeConfig: {
     socialLinks: [
       {
