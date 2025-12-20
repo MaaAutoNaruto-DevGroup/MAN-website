@@ -63,8 +63,8 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build with VuePress
-        run: pnpm run docs:build
+      - name: Build with Rspress
+        run: pnpm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
