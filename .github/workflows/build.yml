@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Build test
 
 on:
   # 当仓库文档更新时触发
