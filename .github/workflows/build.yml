@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Build test
 
 on:
   # 当仓库文档更新时触发
@@ -10,6 +10,10 @@ on:
   workflow_dispatch:
   # 推送到 main 分支时触发
   push:
+    branches:
+      - main
+  # 合并请求时触发
+  pull_request:
     branches:
       - main
 
@@ -66,18 +70,3 @@ jobs:
       - name: Build with Rspress
         run: pnpm run build
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: doc_build
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
