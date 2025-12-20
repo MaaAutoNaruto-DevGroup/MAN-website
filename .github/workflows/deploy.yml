@@ -31,20 +31,17 @@ jobs:
         with:
           fetch-depth: 0
 
-    #   - name: Checkout M9A repository
-    #     uses: actions/checkout@v4
-    #     with:
-    #       repository: MAA1999/M9A
-    #       path: M9A-temp
+      - name: Checkout MAN repository
+         uses: actions/checkout@v4
+         with:
+           repository: duorua/narutomobile
+           path: temp
 
-    #   - name: Sync docs from M9A
-    #     run: |
-    #       # 同步根 README
-    #       cp M9A-temp/docs/README.md docs/README.md || true
-    #       # 同步中文文档
-    #       rsync -av --delete M9A-temp/docs/zh_cn/ docs/zh_cn/ || true
-    #       # 同步英文文档
-    #       rsync -av --delete M9A-temp/docs/en_us/ docs/en_us/ || true
+      - name: Sync docs from M9A
+         run: |
+           # 同步根 README
+#           cp temp/docs/README.md docs/README.md || true
+           rsync -av --delete temp/docs/ docs/ || true
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
