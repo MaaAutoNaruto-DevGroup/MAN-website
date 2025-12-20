@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   # 当仓库文档更新时触发
   repository_dispatch:
-    types: [md_changes]
+    types: [ md_changes ]
   # 手动触发部署
   workflow_dispatch:
   # 推送到 main 分支时触发
@@ -32,16 +32,16 @@ jobs:
           fetch-depth: 0
 
       - name: Checkout MAN repository
-         uses: actions/checkout@v4
-         with:
-           repository: duorua/narutomobile
-           path: temp
+        uses: actions/checkout@v4
+        with:
+          repository: duorua/narutomobile
+          path: temp
 
       - name: Sync docs from M9A
-         run: |
-           # 同步根 README
-#           cp temp/docs/README.md docs/README.md || true
-           rsync -av --delete temp/docs/ docs/ || true
+        run: |
+          # 同步根 README
+          #           cp temp/docs/README.md docs/README.md || true
+          rsync -av --delete temp/docs/ docs/ || true
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
