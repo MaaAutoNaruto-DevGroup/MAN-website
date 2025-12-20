@@ -2,11 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   # 当仓库文档更新时触发
-  # Triggered when M9A repository docs are updated
   repository_dispatch:
     types: [md_changes]
   # 手动触发部署
-  # Manually trigger deployment
   workflow_dispatch:
   # 推送到 main 分支时触发
   push:
@@ -50,6 +48,8 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
+        with:
+          version: 9
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
