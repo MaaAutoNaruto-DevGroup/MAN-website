@@ -16,7 +16,6 @@ export default defineConfig({
         dark: '/rspress-dark-logo.png',
     },
     themeConfig: {
-        lastUpdated: true,
         socialLinks: [
             {
                 icon: 'github',
@@ -24,5 +23,13 @@ export default defineConfig({
                 content: 'https://github.com/duorua/narutomobile',
             },
         ],
+        enableScrollToTop: true, // 是否启用回到顶部按钮,
+        enableContentAnimation: true, // 是否启用内容动画
+        enableAppearanceAnimation: true, // 是否启用外观动画
+        lastUpdated: true, // 是否启用页面更新时间
+        lastUpdatedText: '上次更新时间',
+        searchPlaceholderText: '搜索',
+        searchNoResultsText: '没有找到搜索结果',
+        searchSuggestedQueryText: '请使用不同的关键词重试',
     },
 });
