@@ -1,13 +1,13 @@
 [
   {
-    "text": "Guide",
+    "text": "用户手册",
     "link": "/guide/",
     "activeMatch": "/guide/"
   },
   {
-    "text": "Hello world",
-    "link": "/hello/",
-    "activeMatch": "/hello/"
+    "text": "开发文档",
+    "link": "/develop/",
+    "activeMatch": "/develop/"
   },
   {
     "text": "CLI",
