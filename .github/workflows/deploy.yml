@@ -37,10 +37,10 @@ jobs:
           repository: duorua/narutomobile
           path: temp
 
-      - name: Sync docs from M9A
+      - name: Sync docs from MAN
         run: |
           # 同步根 README
-          #           cp temp/docs/README.md docs/README.md || true
+          # cp temp/docs/README.md docs/README.md || true
           rsync -av --delete temp/docs/ docs/ || true
 
       - name: Setup pnpm
