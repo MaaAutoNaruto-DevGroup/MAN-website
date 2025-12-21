@@ -41,7 +41,7 @@ jobs:
         run: |
           # 同步根 README
           # cp temp/docs/README.md docs/README.md || true
-          rsync -av --delete temp/docs/ docs/ || true
+          rsync -av temp/docs/ docs/ || true
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
