@@ -10,6 +10,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '10 5 * * *'
 
 # 添加权限配置
 permissions:
