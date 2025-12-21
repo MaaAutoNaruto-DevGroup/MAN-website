@@ -13,7 +13,7 @@ hero:
       text: GitHub
       link: https://github.com/duorua/narutomobile
   image:
-    src: /rspress-icon.png
+    src: /logo.ico
     alt: Logo
 features:
   - title: Blazing fast build speed
