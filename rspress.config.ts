@@ -7,7 +7,7 @@ import toc from 'rspress-plugin-toc';
 export default defineConfig({
     root: path.join(__dirname, 'docs'),
     title: 'Maa Auto Naruto',
-    icon: '/logo.ico',
+    icon: '/logo.png',
     plugins: [alignImage(), readingTime({
         defaultLocale: 'zh-CN',
     }), toc()],
