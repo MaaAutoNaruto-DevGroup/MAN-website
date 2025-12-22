@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: GitHub
       link: https://github.com/duorua/narutomobile
+    - theme: alt
+      text: Mirror酱
+      link: https://mirrorchyan.com/zh/projects
   image:
     src: /logo.png
     alt: Logo
