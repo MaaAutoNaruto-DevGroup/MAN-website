@@ -13,7 +13,7 @@ hero:
       text: GitHub
       link: https://github.com/duorua/narutomobile
   image:
-    src: /logo.ico
+    src: /logo.png
     alt: Logo
 features:
   - title: 图像识别
