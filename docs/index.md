@@ -17,7 +17,7 @@ hero:
     alt: Logo
 features:
   - title: 图像识别
-    details: 基于OpenCV精准识别游戏界面元素，实现稳定可靠的自动化操作。
+    details: 基于OpenCV和PaddleOCR精准识别游戏界面元素，实现稳定可靠的自动化操作。
     icon: 🎯
   - title: 日常任务
     details: 支持刷体力、组织祈福、每日招财、生存挑战等日常任务的自动化执行。

@@ -1,5 +1,7 @@
 # Rspress website
 
+这里是[MAN](https://github.com/duorua/narutomobile)的文档站源码。
+
 ## Setup
 
 Install the dependencies:
